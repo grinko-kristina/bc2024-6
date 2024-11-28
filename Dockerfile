@@ -35,4 +35,4 @@ COPY . .
 EXPOSE 1488
 
 # Run the application.
-CMD ["node", "index.js", "--host", "0.0.0.0", "--port", "1488", "--cache", "./cache"]
+CMD npx nodemon -L --inspect=0.0.0.0:9229 index.js --host 0.0.0.0 --port 3000 --cache cache
