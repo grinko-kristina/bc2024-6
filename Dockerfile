@@ -35,4 +35,4 @@ COPY . .
 EXPOSE 1488
 
 # Run the application.
-CMD npm start
+CMD ["node", "index.js", "--host", "0.0.0.0", "--port", "1488", "--cache", "./cache"]
